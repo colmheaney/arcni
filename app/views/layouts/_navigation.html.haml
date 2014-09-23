@@ -1,0 +1,9 @@
+.nav-container
+  .top.col-1-1
+  %nav.nav.col-4-5
+    %ul
+      %li.selected{ name: "/" }=  link_to "Home", root_path
+      %li{ name: "/about" }=      link_to "About", about_path
+      %li{ name: "/education" }=  link_to "Education", education_path
+      %li{ name: "/museum" }=     link_to "Pop-up Museum", museum_path
+      %li{ name: "/community" }=  link_to "Community Archaeology", community_path
