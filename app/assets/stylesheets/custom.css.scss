@@ -18,6 +18,7 @@ body {
   overflow: hidden;
   p {
     line-height: 1.5em;
+    font-size: 14px;
   }
   a {
     &:hover {
@@ -148,6 +149,17 @@ input[type=checkbox]:checked ~ #menu{
 /*Responsive Styles*/
 
 @media screen and (max-width : 760px){
+  body {
+    p {
+      line-height: 1.5em;
+      font-size: 18px;
+    }
+    .content {
+      p.blurb {
+        font-size: 24px;
+      }
+    }
+  }
   nav { 
     ul {
       position: static;
@@ -172,6 +184,12 @@ input[type=checkbox]:checked ~ #menu{
   }
   .content, .footer-content {
     margin-left: 5% !important;
+  }
+  ul.social-nav {
+    margin-left: 0px;
+    li a {
+      margin: 0 20px 0 0px !important;
+    }
   }
 }
 
