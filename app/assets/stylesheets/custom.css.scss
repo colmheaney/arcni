@@ -31,7 +31,6 @@ sidebar {
   .company_logo {
     position: fixed;
     margin: 44px 0 0 70px;
-    /*margin-left: 45%;*/
     width: 10%;
   }
 }
@@ -159,14 +158,20 @@ input[type=checkbox]:checked ~ #menu{
     }
     ul li, li a {
       width: 100%;
+      /*text-align: center;*/
       float: right;
     }
   }
   .show-menu {
     display:block;
   }
-  .company_logo {
-    display: none;
+  sidebar {
+    .company_logo {
+      display: none;
+    }
+  }
+  .content, .footer-content {
+    margin-left: 5% !important;
   }
 }
 
