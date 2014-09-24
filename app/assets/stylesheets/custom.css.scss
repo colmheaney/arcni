@@ -164,13 +164,16 @@ input[type=checkbox]:checked ~ #menu{
     ul {
       position: static;
       display: none;
+      margin-top: 0px !important;
     }
     li {
       margin-bottom: 1px;
+      padding-left: 5%;
+      /*border-bottom: 1px solid #eeeeee;*/
     }
     ul li, li a {
       width: 100%;
-      float: right;
+      line-height: 1.8em;
       font-size: 1.2em;
     }
   }
