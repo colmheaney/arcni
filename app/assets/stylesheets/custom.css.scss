@@ -107,7 +107,7 @@ nav.nav {
     margin-left: 20%;
   }
   .copyright {
-    font-size: 12px;
+    font-size: 1em;
     margin-top: 30px;
   }
   ul.social-nav {
@@ -170,8 +170,8 @@ input[type=checkbox]:checked ~ #menu{
     }
     ul li, li a {
       width: 100%;
-      /*text-align: center;*/
       float: right;
+      font-size: 1.2em;
     }
   }
   .show-menu {
@@ -190,6 +190,9 @@ input[type=checkbox]:checked ~ #menu{
     li a {
       margin: 0 20px 0 0px !important;
     }
+  }
+  .copyright p {
+    font-size: 1em;
   }
 }
 
