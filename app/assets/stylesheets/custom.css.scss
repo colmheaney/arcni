@@ -31,6 +31,7 @@ sidebar {
   .company_logo {
     position: fixed;
     margin: 44px 0 0 70px;
+    /*margin-left: 45%;*/
     width: 10%;
   }
 }
@@ -60,6 +61,7 @@ nav.nav {
   }
 }
 .content {
+  margin-left: 20%;
   margin-top: 30px;
   p.blurb {
     font-size: 20px;
@@ -96,10 +98,13 @@ nav.nav {
 }
 .footer {
   padding-top: 40px;
-  margin-top: 50px;
+  margin-top: 40px;
   background-color: $purple;
   li, a, p, i {
     color: white;
+  }
+  .footer-content {
+    margin-left: 20%;
   }
   .copyright {
     font-size: 12px;
@@ -128,6 +133,40 @@ nav.nav {
     padding-left: 0px;
   }
 }
-.clear {
-  clear: both;
+.show-menu {
+  padding: 10px 0;
+  display: none;
+  float: right;
+  color: $green;
 }
+input[type=checkbox]{
+    display: none;
+}
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 760px){
+  nav { 
+    ul {
+      position: static;
+      display: none;
+    }
+    li {
+      margin-bottom: 1px;
+    }
+    ul li, li a {
+      width: 100%;
+      float: right;
+    }
+  }
+  .show-menu {
+    display:block;
+  }
+  .company_logo {
+    display: none;
+  }
+}
+

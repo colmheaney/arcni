@@ -1,7 +1,10 @@
 .nav-container
   .top.col-1-1
   %nav.nav.col-4-5
-    %ul
+    %label.show-menu{ for: "show-menu" } 
+      = icon("bars", '', class: "fa-2x")
+    %input#show-menu{ type: "checkbox", role: "button" }
+    %ul#menu
       %li.selected{ name: "/" }=  link_to "Home", root_path
       %li{ name: "/about" }=      link_to "About", about_path
       %li{ name: "/education" }=  link_to "Education", education_path
