@@ -30,7 +30,7 @@ body {
 sidebar {
   .company_logo {
     position: fixed;
-    margin: 40px 0 0 70px;
+    margin: 44px 0 0 70px;
     width: 10%;
   }
 }
@@ -85,7 +85,7 @@ nav.nav {
   figcaption {
     background-color: $darkgrey;
     opacity: 0.65;
-    padding: 3px;
+    padding: 3px 7px;
     width: 100%;
     position: absolute;
     bottom: 0px;
@@ -95,7 +95,7 @@ nav.nav {
   }
 }
 .footer {
-  padding-top: 50px;
+  padding-top: 40px;
   margin-top: 50px;
   background-color: $purple;
   li, a, p, i {
@@ -107,6 +107,7 @@ nav.nav {
   }
   ul.social-nav {
     li {
+      margin-left: 0px;
       float: left;
       a {
         margin: 10px;
@@ -121,7 +122,9 @@ nav.nav {
     }
   }
   li {
+    padding-top: 5px;
     margin-top: 20px;
+    margin-left: 10px;
     padding-left: 0px;
   }
 }
