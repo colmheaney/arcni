@@ -10,4 +10,5 @@
       %li{ name: "/education" }=  link_to "Education", education_path
       %li{ name: "/museum" }=     link_to "Pop-up Museum", museum_path
       %li{ name: "/community" }=  link_to "Community Archaeology", community_path
-    = link_to image_tag("company_logo_small.png", class: "brand"), root_path
+    .brand-wrapper
+      = link_to image_tag("company_logo_small.png", class: "brand"), root_path

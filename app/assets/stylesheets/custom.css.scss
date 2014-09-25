@@ -42,9 +42,11 @@ sidebar {
 nav.nav {
   margin: auto;
   width: 60%;
+  .brand-wrapper {
+    text-align: center;
+  }
   img.brand {
     display: none;
-    /*width: 60px;*/
   }
   ul {
     margin-top: 20px;
@@ -173,10 +175,9 @@ input[type=checkbox]:checked ~ #menu{
     width: 90%;
     img.brand {
       clear: both;
-      display: block;
-      margin: auto;
+      display: inline-block;
       width: 40%;
-      padding-top: 40px;
+      padding-top: 30px;
     }
     ul {
       display: none;
