@@ -178,11 +178,10 @@ input[type=checkbox]:checked ~ #menu{
       position: static;
       display: none;
       margin-top: 0px !important;
+      padding-top: 20px;
     }
     li {
       margin-bottom: 1px;
-      /*padding-left: 5%;*/
-      /*border-bottom: 1px solid #eeeeee;*/
     }
     ul li, li a {
       width: 100%;
