@@ -1,7 +1,6 @@
 .nav-container
   .top.col-1-1
   %nav.nav
-    = link_to image_tag("company_logo_small.png", class: "brand"), root_path
     %label.show-menu{ for: "show-menu" } 
       = icon("bars", '', class: "fa-2x")
     %input#show-menu{ type: "checkbox", role: "button" }
@@ -11,3 +10,4 @@
       %li{ name: "/education" }=  link_to "Education", education_path
       %li{ name: "/museum" }=     link_to "Pop-up Museum", museum_path
       %li{ name: "/community" }=  link_to "Community Archaeology", community_path
+    = link_to image_tag("company_logo_small.png", class: "brand"), root_path
