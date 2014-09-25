@@ -43,10 +43,11 @@ nav.nav {
   width: 60%;
   img.brand {
     display: none;
-    padding-top:40px;
+    /*width: 60px;*/
   }
   ul {
     margin-top: 20px;
+    float: right;
     li {
       float: left;
       font-weight: bold;
@@ -170,17 +171,17 @@ input[type=checkbox]:checked ~ #menu{
   nav.nav { 
     width: 90%;
     img.brand {
+      clear: both;
       display: block;
-      padding-left: 0;
       margin: auto;
+      width: 20%;
     }
     ul {
-      position: static;
       display: none;
-      margin-top: 0px !important;
-      padding-top: 20px;
+      padding: 20px 0;
     }
     li {
+      border-bottom: 1px solid #eeeeee;
       margin-bottom: 1px;
     }
     ul li, li a {
