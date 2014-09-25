@@ -1,6 +1,7 @@
 .nav-container
   .top.col-1-1
-  %nav.nav.col-4-5
+  %nav.nav
+    = link_to image_tag("company_logo_small.jpg", class: "brand"), root_path
     %label.show-menu{ for: "show-menu" } 
       = icon("bars", '', class: "fa-2x")
     %input#show-menu{ type: "checkbox", role: "button" }

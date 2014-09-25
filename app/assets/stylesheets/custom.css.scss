@@ -39,6 +39,13 @@ sidebar {
   border-top: 7px solid $purple;
 }
 nav.nav {
+  margin: auto;
+  width: 60%;
+  img.brand {
+    display: none;
+    padding:10px 0 0 10px;
+    width: 70px;
+  }
   ul {
     margin-top: 20px;
     float: right;
@@ -107,8 +114,10 @@ nav.nav {
     margin-left: 20%;
   }
   .copyright {
-    font-size: 1em;
     margin-top: 30px;
+    p {
+      font-size: 0.9em;
+    }
   }
   ul.social-nav {
     li {
@@ -148,7 +157,7 @@ input[type=checkbox]:checked ~ #menu{
 
 /*Responsive Styles*/
 
-@media screen and (max-width : 760px){
+@media screen and (max-width : 1020px){
   body {
     p {
       line-height: 1.5em;
@@ -160,7 +169,11 @@ input[type=checkbox]:checked ~ #menu{
       }
     }
   }
-  nav { 
+  nav.nav { 
+    width: 90%;
+    img.brand {
+      display: inline;
+    }
     ul {
       position: static;
       display: none;
@@ -168,7 +181,7 @@ input[type=checkbox]:checked ~ #menu{
     }
     li {
       margin-bottom: 1px;
-      padding-left: 5%;
+      /*padding-left: 5%;*/
       /*border-bottom: 1px solid #eeeeee;*/
     }
     ul li, li a {
