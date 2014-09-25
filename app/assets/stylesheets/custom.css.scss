@@ -1,6 +1,7 @@
 $darkgrey:  #1d1d1b;
 $purple:    #65277d;
 $green:     #31ac6d;
+$border:    #aaaaaa;
 @mixin transition($period) {
   -webkit-transition: all $period ease-out;
   -moz-transition: all $period ease-out;
@@ -175,15 +176,15 @@ input[type=checkbox]:checked ~ #menu{
       display: block;
       margin: auto;
       width: 40%;
+      padding-top: 40px;
     }
     ul {
       display: none;
-      padding-bottom: 20px;
-      text-align: center;
-      margin-top: 0px;
+      float: none;
+      text-align: right;
     }
     li {
-      border-bottom: 1px solid #eeeeee;
+      border-bottom: 1px dotted $border;
       margin-bottom: 1px;
     }
     ul li, li a {
@@ -194,6 +195,7 @@ input[type=checkbox]:checked ~ #menu{
   }
   .show-menu {
     display:block;
+    margin-right: 5px;
   }
   sidebar {
     .company_logo {
