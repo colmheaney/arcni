@@ -1,7 +1,7 @@
 $darkgrey:  #1d1d1b;
 $purple:    #65277d;
 $green:     #31ac6d;
-$border:    #aaaaaa;
+$border:    #d4d4d4;
 @mixin transition($period) {
   -webkit-transition: all $period ease-out;
   -moz-transition: all $period ease-out;
@@ -60,7 +60,7 @@ nav.nav {
     float: right;
     li {
       float: left;
-      font-weight: bold;
+      /*font-weight: bold;*/
       &:hover, &.selected {
         a {
           @include transition(0.1s);
@@ -204,7 +204,7 @@ input[type=checkbox]:checked ~ #menu{
       text-align: right;
     }
     li {
-      border-bottom: 1px dotted $border;
+      border-bottom: 1px solid $border;
       margin-bottom: 1px;
     }
     ul li, li a {

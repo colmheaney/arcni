@@ -2,7 +2,8 @@
   .top.col-1-1
   %nav.nav
     .brand-name 
-      %h1 Archaeology<em>NI</em>
+      = link_to root_path do
+        %h1 Archaeology<em>NI</em>
     %label.show-menu{ for: "show-menu" } 
       = icon("bars", '', class: "fa-2x")
     %input#show-menu{ type: "checkbox", role: "button" }
