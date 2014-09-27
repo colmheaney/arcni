@@ -45,8 +45,15 @@ nav.nav {
   .brand-wrapper {
     text-align: center;
   }
-  img.brand {
+  img.brand, .brand-name {
     display: none;
+  }
+  .brand-name h1 {
+    color: $purple;
+    font-weight: bold;
+    em {
+      color: $green
+    }
   }
   ul {
     margin-top: 20px;
@@ -131,8 +138,8 @@ nav.nav {
       }
       i {
         &:hover {
-          color: $green;
           @include transition(0.1s);
+          color: $green;
         }
       }
     }
@@ -156,27 +163,39 @@ input[type=checkbox]{
 input[type=checkbox]:checked ~ #menu{
     display: block;
 }
-
+.summary {
+  text-align: center;
+  i {
+    color: $purple;
+    &:hover {
+      @include transition(0.1s);
+      color: $green;
+    }
+  }
+}
 /*Responsive Styles*/
 
 @media screen and (max-width : 1020px){
   body {
     p {
-      line-height: 1.5em;
-      font-size: 18px;
+      line-height: 1.6em;
+      font-size: 16px;
     }
     .content {
       p.blurb {
-        font-size: 24px;
+        font-size: 20px;
+      }
+      p.heading {
+        margin-top: 25px;
       }
     }
   }
   nav.nav { 
-    width: 90%;
+    width: 95%;
     img.brand {
       clear: both;
       display: inline-block;
-      width: 40%;
+      width: 20%;
       padding-top: 30px;
     }
     ul {
@@ -196,6 +215,7 @@ input[type=checkbox]:checked ~ #menu{
   }
   .show-menu {
     display:block;
+    margin-top: 15px;
     margin-right: 5px;
   }
   sidebar {
@@ -217,3 +237,11 @@ input[type=checkbox]:checked ~ #menu{
   }
 }
 
+@media (max-width : 760px){
+  nav.nav img.brand {
+    display: none;
+  }
+  nav.nav .brand-name {
+    display: inline-block;
+  }
+}
