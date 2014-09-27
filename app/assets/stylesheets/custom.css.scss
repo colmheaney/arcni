@@ -60,7 +60,7 @@ nav.nav {
     float: right;
     li {
       float: left;
-      /*font-weight: bold;*/
+      font-weight: bold;
       &:hover, &.selected {
         a {
           @include transition(0.1s);
@@ -204,6 +204,7 @@ input[type=checkbox]:checked ~ #menu{
       text-align: right;
     }
     li {
+      font-weight: normal !important;
       border-bottom: 1px solid $border;
       margin-bottom: 1px;
     }
@@ -236,7 +237,9 @@ input[type=checkbox]:checked ~ #menu{
     font-size: 1em;
   }
 }
-
+.clear30 {
+  margin-top: 30px;
+}
 @media (max-width : 760px){
   nav.nav img.brand {
     display: none;
