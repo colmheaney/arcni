@@ -1,17 +1,16 @@
-.nav-container
-  .top.col-1-1
+.nav-container.grid
   %nav.nav
-    .brand-name 
-      = link_to root_path do
-        %h1 Archaeology<em>NI</em>
+    .brand.pull-left
+      = link_to image_tag("company_logo.jpg"), root_path
     %label.show-menu{ for: "show-menu" } 
       = icon("bars", '', class: "fa-2x")
     %input#show-menu{ type: "checkbox", role: "button" }
-    %ul#menu
+    %ul.pull-right
       %li.selected{ name: "/" }=  link_to "Home", root_path
-      %li{ name: "/about" }=      link_to "About", about_path
-      %li{ name: "/education" }=  link_to "Education", education_path
-      %li{ name: "/museum" }=     link_to "Pop-up Museum", museum_path
-      %li{ name: "/community" }=  link_to "Community Archaeology", community_path
-    .brand-wrapper.col-1-1
-      = link_to image_tag("company_logo.jpg", class: "brand"), root_path
+      %li{ name: "/about" }=      link_to "About Us", about_path
+      %li{ name: "/school-dig" }=  link_to "School Dig", school_dig_path
+      %li{ name: "/hands-on-history" }=     link_to "Hands on History", hands_on_history_path
+      %li{ name: "/projects" }=  link_to "Projects", projects_path
+      %li{ name: "/news" }=  link_to "News", news_path
+      %li{ name: "/contact" }=  link_to "Contact Us", contact_path, { data: { no_turbolink: true } } 
+

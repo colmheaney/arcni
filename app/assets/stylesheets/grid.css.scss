@@ -20,7 +20,9 @@
 [class*='col-'] { padding-left: 20px; }
 [class*='col-']:last-of-type { padding-right: 0; }
 .grid-no-pad { padding: 0; }
-
+.middle-col { padding-left: 20px; margin: 0 2%;  width: 30%;}
+.right-col { padding-left: 20px; margin-left: 2%; width: 30%; }
+.left-col { padding-left: 20px; margin-right: 2%; width: 30%; }
 
 @media screen and (max-width : 1020px){
   .col-3-5 { width: 95%; padding-left: 0px;}

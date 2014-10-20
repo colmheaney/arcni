@@ -2,15 +2,21 @@ class StaticPagesController < ApplicationController
   def home
   end
 
-  def education
+  def handsonhistory
   end
 
-  def museum
+  def schooldig
   end
 
-  def community
+  def projects
   end
 
   def about
+  end
+
+  def news
+  end
+  
+  def contact
   end
 end

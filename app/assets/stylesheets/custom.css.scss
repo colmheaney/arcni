@@ -1,4 +1,8 @@
+$link_color: #5a77b9;
 $darkgrey:  #1d1d1b;
+$lightgrey: #666666;
+$text: #555555;
+$banner_border: #cccccc;
 $purple:    #65277d;
 $green:     #31ac6d;
 $border:    #d4d4d4;
@@ -12,52 +16,84 @@ $border:    #d4d4d4;
 html { 
     p, h1, h2, h3 { 
     font-family: sans-serif;
-    color: $darkgrey;
   }
 }
 body {
   overflow: hidden;
   p {
-    line-height: 1.5em;
-    font-size: 14px;
+    line-height: 32px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: $text;
   }
-  a {
-    &:hover {
-      color: $green;
-      @include transition(0.1s);
-      text-decoration: none;
+  .blurb {
+    font-size: 28px;
+    color: #222;
+    line-height: 36px;
+    margin-top: 20px;
+    em {
+      color: $purple;
+      font-style: italic;
     }
   }
+  color: white;
 }
-sidebar {
-  .company_logo {
-    position: fixed;
-    margin: 44px 0 0 70px;
-    width: 10%;
+.clear {
+  clear: both;
+}
+.section {
+  padding: 70px 5%;
+}
+.section-no-pad-bottom {
+  padding: 70px 5% 10px 5%;
+}
+.section-no-pad-top {
+  padding: 0 5% 70px 5%;
+}
+h2.section-heading {
+  margin: 0;
+  padding: 30px 0;
+  background-color: $green;
+  color: white;
+  font-size: 40px;
+}
+.what-we-do {
+  background-color: #eaeaec;
+}
+a.underline-link {
+  font-size: 18px;
+  border-bottom: 1px solid $link_color;
+  padding-bottom: 2px;
+  &:visited {
+    color: $link_color;
   }
+  &:hover {
+    color: $green;
+    @include transition(0.1s);
+    text-decoration: none;
+    border-bottom: 1px solid $green;
+  }
+}
+img {
+  width: 100%;
+}
+h2 {
+  text-align:center;
 }
 .top {
   border-top: 7px solid $purple;
 }
 nav.nav {
-  margin: auto;
-  width: 60%;
-  .brand-wrapper {
-    text-align: center;
-  }
-  img.brand, .brand-name {
-    display: none;
-  }
-  .brand-name h1 {
-    color: $purple;
-    font-weight: bold;
-    em {
-      color: $green
+  padding: 0 5%;
+  position: relative;
+  .brand {
+    padding-top: 20px;
+    img {
+      width: 90px;
     }
   }
   ul {
-    margin-top: 20px;
-    float: right;
+    padding-top: 20px;
     li {
       float: left;
       font-weight: bold;
@@ -68,64 +104,97 @@ nav.nav {
         }
       }
       a {
-        margin: 10px;
-        width: 90px;
+        font-size: 1.1em;
+        margin: 20px;
         text-decoration: none;
-        color: $darkgrey;
+        color: $lightgrey;
       }
     }
   }
 }
-.content {
-  margin-left: 20%;
-  margin-top: 30px;
-  p.blurb {
-    font-size: 20px;
-    font-weight: 400;
-    margin-bottom: 30px;
-    em {
-      color: $purple;
-      font-style: italic;
-      border-bottom: 1px dotted $purple;
-    }
-  }
-  p.heading {
-    margin-top: 20px;
-    font-weight: bold;
-  }
-  img {
-    width: 100%;
-  }
-  figure {
-    margin-bottom: 20px;
-    position: relative;
-  }
-  figcaption {
-    background-color: $darkgrey;
-    opacity: 0.65;
-    padding: 3px 7px;
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
-  }
-  .caption {
-    color: white;
+.logo {
+  text-align: left;
+  margin-top: 0px;
+  color: $purple;
+  em {
+    color: $green;
   }
 }
-.footer {
+i {
+  color: $purple;
+}
+.banner {
+  margin-top: 20px;
+  border: 1px solid $banner_border;
+  background-color: #eaeaec;
+}
+.contact-us {
+  color: #fff !important;
+  background-color: $green;
+  border: none;
+  padding: 10px 30px;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.33;
+  border-radius: 5px;
+  &:hover {
+    @include transition(0.1s);
+    background-color: $purple;
+    text-decoration: none;
+  }
+  &:focus {
+    outline: 0;
+  }
+}
+.centered-divider {
+  background-color: $purple;
+  display: block;
+  height: 6px;
+  width: 90px;
+  margin: 7.5% auto;
+}
+.who-we-work-with, .local-heritage {
+  margin-top: 20px;
+  text-align: center;
+  padding: 0 60px !important;
+  p {
+    font-size: 22px;
+    line-height: 36px;
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 33px;
+  }
+}
+.carousel-inner {
+  border: 10px solid #fff;
+  box-shadow: 0 0 4px #bdbdbd;
+}
+.carousel-control {
+  background-image: none !important;
+}
+footer {
+  .footer {
+    margin: 0 5%;
+  }
   padding-top: 40px;
-  margin-top: 40px;
   background-color: $purple;
   li, a, p, i {
     color: white;
   }
-  .footer-content {
-    margin-left: 20%;
+  a {
+    font-size: 1.0em;
+    &:hover {
+      @include transition(0.1s);
+      color: $green;
+    }
   }
   .copyright {
-    margin-top: 30px;
+    margin-top: 10px;
     p {
       font-size: 0.9em;
+      margin-bottom: 0 !important;
+      text-align: center;
     }
   }
   ul.social-nav {
@@ -146,7 +215,7 @@ nav.nav {
   }
   li {
     padding-top: 5px;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 10px;
     padding-left: 0px;
   }
@@ -164,7 +233,8 @@ input[type=checkbox]:checked ~ #menu{
     display: block;
 }
 .summary {
-  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
   i {
     color: $purple;
     &:hover {
@@ -191,13 +261,6 @@ input[type=checkbox]:checked ~ #menu{
     }
   }
   nav.nav { 
-    width: 95%;
-    img.brand {
-      clear: both;
-      display: inline-block;
-      width: 20%;
-      padding-top: 30px;
-    }
     ul {
       display: none;
       float: none;
@@ -219,14 +282,6 @@ input[type=checkbox]:checked ~ #menu{
     margin-top: 15px;
     margin-right: 5px;
   }
-  sidebar {
-    .company_logo {
-      display: none;
-    }
-  }
-  .content, .footer-content {
-    margin-left: 5% !important;
-  }
   ul.social-nav {
     margin-left: 0px;
     li a {
@@ -240,11 +295,39 @@ input[type=checkbox]:checked ~ #menu{
 .clear30 {
   margin-top: 30px;
 }
+.clear80 {
+  margin-top: 80px;
+}
+.img-border {
+  border: 10px solid #fff;
+  box-shadow: 0 0 4px #bdbdbd;
+}
 @media (max-width : 760px){
   nav.nav img.brand {
     display: none;
   }
   nav.nav .brand-name {
     display: inline-block;
+  }
+}
+#map_canvas {
+  border: 1px solid $banner_border;
+  width: 100%;
+  height: 500px;
+}
+.contact-wrapper {
+  position: relative;
+}
+.contact-details {
+  position: absolute;
+  width: 300px;
+  background-color: white;
+  top: 280px;
+  left: 55%;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #bdbdbd;
+  h3 {
+    margin-top: 5px;
   }
 }

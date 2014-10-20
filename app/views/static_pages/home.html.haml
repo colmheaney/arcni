@@ -1,38 +1,66 @@
-%article
-  %h3 Welcome
-  .col-2-3.grid-no-pad
-    %p.blurb We are an <em>archaeological heritage</em> consultancy based in Northern Ireland. We work with schools, community groups, heritage trusts, councils and local government bodies in the promotion of <em>local archaeology</em>.
-
-    .col-1-2.grid-no-pad
-      %h4 Gavin Donaghy
-      %p Gavin is a graduate of the University of Ulster Jordanstown. He started his working life in the IT sector, but then decided to follow his dream of becoming an archaeologist and began working in commercial archaeology as a field archaeologist, working his way up to a licensed archaeological site director in 2009. 
-      %p Gavin has a vast amount of experience on numerous archaeological site types and has a great passion for new technology and how it can add to our appreciation of archaeological sites. 
-      %p Gavin heads up our educational outreach department and our aerial photographic surveys.
-      .clear30
-
-      %h4 Lianne Heaney
-      %p Lianne is a graduate from Queens University Belfast and University of Ulster Coleraine in archaeology. 
-      %p She has worked in the commercial archaeology sector since 2002 making her way up the ranks from a field archaeologist to licensed site director and then post-excavation manger and business manager of one the biggest commercial archaeological consultancy’s in Northern Ireland. 
-      %p Lianne currently oversees the admin side of the company.
-      .clear30
+.section.banner
+  .row
+    .col-1-2
+      %h1.logo Archaeology<em>NI</em>
+      %p.blurb We are a heritage company that provides a unique range of historical services to both the public and private sector.  
+      %p From bespoke events management to our unique schools programmes, Archaeology NI provides a new way to interact with and view of our country’s past. 
+      %br
+      = link_to "Get in touch", contact_path, class: "contact-us",  data: { no_turbolink: true } 
 
     .col-1-2
-      %h4 Cormac Duffy
-      %p Cormac has recently joined us from University College London, he will be our Northwest Heritage and Education Officer, initially focusing on our new archaeology in the classroom initiative.  
-      %p Cormac studied archaeology and graduated from Queens University Belfast in 2005 and has worked in the commercial sector in Northern Ireland and England ever since working his way up to supervising and managing excavations on large multi period sites throughout the UK. 
-      %p His interests include wood preservation in archaeological contexts, outside of fieldwork he has an ongoing interest in archaeological based community outreach. 
-      .clear30
+      #carousel.carousel.slide{ data: { ride: "carousel" } } 
+        %ol.carousel-indicators
+          %li.active{ data: { target:"#carousel", slide_to:"0" } }
+          %li{ data: { target:"#carousel", slide_to:"0" } }
+          %li{ data: { target:"#carousel", slide_to:"0" } }
 
-  .col-1-3
-    %figure
-      = image_tag "boy-holding-item.jpg"
-      %figcaption
-        .caption Some title
-    %figure
-      = image_tag "muff.jpg"
-      %figcaption
-        .caption Another Title
-    %figure
-      = image_tag "inch-abbey.jpg"
-      %figcaption
-        .caption And another...
+        .carousel-inner
+          .item.active
+            = image_tag "banner_1.jpg"
+            .carousel-caption
+              %h3 Some Text
+          .item
+            = image_tag "banner_2.jpg"
+            .carousel-caption
+              %h3 Some more Text
+          .item
+            = image_tag "banner_3.jpg"
+            .carousel-caption
+              %h3 and... some more
+
+        = link_to "#carousel", class: "left carousel-control", role: "button", data: { slide:"prev" } do
+          %span.glyphicon.glyphicon-chevron-left
+            
+        = link_to "#carousel", class: "right carousel-control", role: "button", data: { slide:"next" } do
+          %span.glyphicon.glyphicon-chevron-right
+            
+.section.summary
+  .row
+    .col-1-2.who-we-work-with
+      = icon("users", '', class: "fa-5x")
+      %h3 Who we work with
+      %p Our clients have included schools, museums, councils, public bodies, tour operators, community organisations, and private companies.  
+    .col-1-2.local-heritage
+      = icon("university", '', class: "fa-5x")
+      %h3 Local Heritage
+      %p Archaeology NI aims to promote local heritage and history through archaeological discovery and exploration.
+
+%h2.section-heading What we do.
+.section.what-we-do
+  .row
+    .col-1-3.left-col
+      = image_tag "banner_2.jpg", class: "img-border"
+      %h3 Hands on History
+      %p Hands on History combines the two main elements of archaeological discovery together, the archaeological sites we dig and the artefacts we unearth.
+      = link_to "Hands on History", hands_on_history_path, class: "underline-link"
+    .col-1-3.middle-col
+      = image_tag "school_dig.jpg", class: "img-border"
+      %h3 School Dig
+      %p Our educational programme guides, motivates and encourage children to draw together diverse threads of evidence in order to give relevance to everyday objects, places and landscapes.
+      = link_to "School Dig", school_dig_path, class: "underline-link"
+
+    .col-1-3.right-col
+      = image_tag "bell.jpg", class: "img-border"
+      %h3 Projects
+      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus felis libero, sit amet viverra nisl porttitor ut. Mauris venenatis aliquet justo, a tempor ante. Nam eget nibh lacinia nunc cursus faucibus.
+      = link_to "Projects", projects_path, class: "underline-link"
