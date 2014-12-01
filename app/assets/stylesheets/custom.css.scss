@@ -52,7 +52,7 @@ body {
 }
 h2.section-heading {
   margin: 0;
-  padding: 30px 0;
+  padding: 40px 0;
   background-color: $green;
   color: white;
   font-size: 40px;
@@ -169,6 +169,7 @@ i {
 .carousel-inner {
   border: 10px solid #fff;
   box-shadow: 0 0 4px #bdbdbd;
+  border-radius: 4px;
 }
 .carousel-control {
   background-image: none !important;
@@ -194,7 +195,7 @@ footer {
     p {
       font-size: 0.9em;
       margin-bottom: 0 !important;
-      text-align: center;
+      /*text-align: center;*/
     }
   }
   ul.social-nav {
@@ -301,6 +302,7 @@ input[type=checkbox]:checked ~ #menu{
 .img-border {
   border: 10px solid #fff;
   box-shadow: 0 0 4px #bdbdbd;
+  border-radius: 4px;
 }
 @media (max-width : 760px){
   nav.nav img.brand {
