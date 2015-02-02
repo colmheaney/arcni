@@ -1,6 +1,6 @@
 .section.banner
   .row
-    .col-1-2
+    .col-1-2.padding-20
       %h1.logo Archaeology<em>NI</em>
       %p.blurb We are a heritage company that provides a unique range of historical services to both the public and private sector.  
       %p From bespoke events management to our unique schools programmes, Archaeology NI provides a new way to interact with and view of our country’s past. 
@@ -8,7 +8,7 @@
       .contact-wrapper
         = link_to "Get in touch", contact_path, class: "contact-us",  data: { no_turbolink: true } 
 
-    .col-1-2
+    .col-1-2.padding-20
       #carousel.carousel.slide{ data: { interval: "5000" } } 
         %ol.carousel-indicators
           %li.active{ data: { target:"#carousel", slide_to:"0" } }
