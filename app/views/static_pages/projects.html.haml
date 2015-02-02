@@ -1,8 +1,106 @@
-.section.banner
+.section-less-pad.banner
   %h1.logo Projects
-  .col-1-3.grid-no-pad
-    %h3 Saint Patrick Centre
-  .col-1-3
+
+.section
+  .col-1-2.grid-no-pad
     %h3 Forging Links to the past
-  .col-1-3
-    %h3 Historical Craft Fair
+
+    %p The Saint Patrick Centre archaeologists (Archaeology NI) and the Down County Museum’s Young Archaeology Club took part in a bit of experimental archaeology in September 2014. The aim of the project was to try out different techniques that would have been used by our early medieval ancestor to create bronze objects, such as axes and bells. 
+
+    %p In the early medieval period (around 1500 years ago), metal of any type would have been quite precious and probably owed by the higher ranks in society, including the early church. Bronze bells would have been used by churches and monasteries to call people to worship, given this religious connection with Saint Patrick we have chosen to try to recreate an early medieval bronze bell similar to one found in a graveyard at Drumgath, near Rathfriland. The Drumgath bell is on display at the Down County Museum and our recreated bell is on display at The Saint Patrick Centre. 
+    
+    %p The first technique we looked at was mounding shapes into casting sand, the YAC used a bronze axe as a template and pushed it into the sand, then poured wax into the sand mould (we substituted melted wax for molten metal for this part of the experiment), let it cool and removed it from the mould. We discovered the deeper the mould the more stable the final product. 
+
+    %p We then looked at the lost wax technique. Wax was moulded or carved to the desired shape, covered in clay which was left to dry and harden, the inside of the clay would pick up any details of decoration carved into the wax, small air holes where place in the clay. Molten metal was then poured into the mould and the wax would melt on contact with the heat and escape out the air holes, the molten metal would fill the void left by the wax. 
+
+    %p Our experiments required several attempts to perfect the technique. The mould for the bell was tricky as the original bell consisted of thin metal, an integrated handle and a clapper, three separate moulds were needed.  The air holes had to be different in each mould, in some they worked perfectly in others they had to be adjusted as they let in too much air so caused the molten metal to bubble and cool before it had fully filled the mould. And we discovered it was very difficult to control the temperature of the furnace and know when it was just right time to pour the molten liquid. The early medieval blacksmiths would not have had thermometers so they too would have learned by trial and error.  
+
+    %p Our experiment showed us that our early medieval ancestors were very ingenious, determined and patient, the lost wax technique is tricky to master, but it is the most effective way of creating intricate moulds for metal items. These early medieval blacksmiths were truly masters of their craft.  
+
+
+    #carousel.carousel.slide{ data: { interval: "false" } } 
+
+      .carousel-inner
+        .item.active
+          = image_tag "forging_links_to_past/0.jpg"
+        .item
+          = image_tag "forging_links_to_past/1.jpg"
+        .item
+          = image_tag "forging_links_to_past/2.jpg"
+        .item
+          = image_tag "forging_links_to_past/3.jpg"
+        .item
+          = image_tag "forging_links_to_past/4.jpg"
+        .item
+          = image_tag "forging_links_to_past/5.jpg"
+        .item
+          = image_tag "forging_links_to_past/6.jpg"
+        .item
+          = image_tag "forging_links_to_past/7.jpg"
+        .item
+          = image_tag "forging_links_to_past/8.jpg"
+        .item
+          = image_tag "forging_links_to_past/9.jpg"
+        .item
+          = image_tag "forging_links_to_past/10.jpg"
+        .item
+          = image_tag "forging_links_to_past/11.jpg"
+        .item
+          = image_tag "forging_links_to_past/12.jpg"
+        .item
+          = image_tag "forging_links_to_past/13.jpg"
+        .item
+          = image_tag "forging_links_to_past/14.jpg"
+        .item
+          = image_tag "forging_links_to_past/15.jpg"
+        .item
+          = image_tag "forging_links_to_past/16.jpg"
+        .item
+          = image_tag "forging_links_to_past/17.jpg"
+
+      = link_to "#carousel", class: "left carousel-control", role: "button", data: { slide:"prev" } do
+        %span.glyphicon.glyphicon-chevron-left
+          
+      = link_to "#carousel", class: "right carousel-control", role: "button", data: { slide:"next" } do
+        %span.glyphicon.glyphicon-chevron-right
+          
+    %br
+    %p Our completed recreated bell can be found on display at the Saint Patrick Centre. 
+    %br
+
+  .col-1-2
+    %h3 Saint Patrick Centre
+    %p In December 2012 we successfully tendered for a contract to work as the heritage outreach officers for the Saint Patrick Centre in Downpatrick funded by the Northern Ireland Environment Agency. This contract involved working with school and community groups on archaeological projects and workshops primarily focusing on life in Early Medieval Ireland, the period in which Saint Patrick would have lived. Also as part of this contract, we created and managed a number of events and tours throughout 2013 and 2014 to enhance the awareness and experience of local early medieval archaeology and heritage to the local community as well as foreign tourists.
+
+    #carousel2.carousel.slide{ data: { interval: "false" } } 
+
+      .carousel-inner
+        .item.active
+          = image_tag "stpatricks/2.jpg"
+        .item
+          = image_tag "stpatricks/4.jpg"
+        .item
+          = image_tag "stpatricks/6.jpg"
+        .item
+          = image_tag "stpatricks/7.jpg"
+        .item
+          = image_tag "stpatricks/11.jpg"
+        .item
+          = image_tag "stpatricks/12.jpg"
+        .item
+          = image_tag "stpatricks/13.jpg"
+        .item
+          = image_tag "stpatricks/14.jpg"
+        .item
+          = image_tag "stpatricks/15.jpg"
+        .item
+          = image_tag "stpatricks/16.jpg"
+        .item
+          = image_tag "stpatricks/17.jpg"
+
+      = link_to "#carousel2", class: "left carousel-control", role: "button", data: { slide:"prev" } do
+        %span.glyphicon.glyphicon-chevron-left
+          
+      = link_to "#carousel2", class: "right carousel-control", role: "button", data: { slide:"next" } do
+        %span.glyphicon.glyphicon-chevron-right
+          

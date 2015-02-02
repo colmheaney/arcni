@@ -19,7 +19,6 @@
 $(document).on('ready page:load', function() {
   site.nav();
   $('.carousel').carousel({
-    interval: 5000
   })
   function initialize() {
     var myLatlng = new google.maps.LatLng(54.6676653,-5.9355584);

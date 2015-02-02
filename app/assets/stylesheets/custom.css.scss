@@ -44,6 +44,9 @@ body {
 .section {
   padding: 70px 5%;
 }
+.section-less-pad {
+  padding: 30px 5% 20px 5%;
+}
 .section-no-pad-bottom {
   padding: 70px 5% 10px 5%;
 }
@@ -127,6 +130,9 @@ i {
   margin-top: 20px;
   border: 1px solid $banner_border;
   background-color: #eaeaec;
+}
+.contact-wrapper {
+  margin-bottom: 30px;
 }
 .contact-us {
   color: #fff !important;

@@ -5,10 +5,11 @@
       %p.blurb We are a heritage company that provides a unique range of historical services to both the public and private sector.  
       %p From bespoke events management to our unique schools programmes, Archaeology NI provides a new way to interact with and view of our country’s past. 
       %br
-      = link_to "Get in touch", contact_path, class: "contact-us",  data: { no_turbolink: true } 
+      .contact-wrapper
+        = link_to "Get in touch", contact_path, class: "contact-us",  data: { no_turbolink: true } 
 
     .col-1-2
-      #carousel.carousel.slide{ data: { ride: "carousel" } } 
+      #carousel.carousel.slide{ data: { interval: "5000" } } 
         %ol.carousel-indicators
           %li.active{ data: { target:"#carousel", slide_to:"0" } }
           %li{ data: { target:"#carousel", slide_to:"0" } }
@@ -17,16 +18,16 @@
         .carousel-inner
           .item.active
             = image_tag "banner_1.jpg"
-            .carousel-caption
-              %h3 Some Text
+            -#.carousel-caption
+              -#%h3 Some Text
           .item
             = image_tag "banner_2.jpg"
-            .carousel-caption
-              %h3 Some more Text
+            -#.carousel-caption
+              -#%h3 Some more Text
           .item
             = image_tag "banner_3.jpg"
-            .carousel-caption
-              %h3 and... some more
+            -#.carousel-caption
+              -#%h3 and... some more
 
         = link_to "#carousel", class: "left carousel-control", role: "button", data: { slide:"prev" } do
           %span.glyphicon.glyphicon-chevron-left
