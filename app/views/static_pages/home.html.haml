@@ -3,31 +3,20 @@
     .col-1-2.padding-20
       %h1.logo Archaeology<em>NI</em>
       %p.blurb We are a heritage company that provides a unique range of historical services to both the public and private sector.  
-      %p From bespoke events management to our unique schools programmes, Archaeology NI provides a new way to interact with and view of our country’s past. 
+      %p From bespoke events management to our unique schools programmes, Archaeology NI provides a new way to interact with and view of our Islands Past.  
       %br
       .contact-wrapper
         = link_to "Get in touch", contact_path, class: "contact-us",  data: { no_turbolink: true } 
 
     .col-1-2.padding-20
       #carousel.carousel.slide{ data: { interval: "5000" } } 
-        %ol.carousel-indicators
-          %li.active{ data: { target:"#carousel", slide_to:"0" } }
-          %li{ data: { target:"#carousel", slide_to:"0" } }
-          %li{ data: { target:"#carousel", slide_to:"0" } }
-
         .carousel-inner
           .item.active
             = image_tag "banner_1.jpg"
-            -#.carousel-caption
-              -#%h3 Some Text
           .item
             = image_tag "banner_2.jpg"
-            -#.carousel-caption
-              -#%h3 Some more Text
           .item
             = image_tag "banner_3.jpg"
-            -#.carousel-caption
-              -#%h3 and... some more
 
         = link_to "#carousel", class: "left carousel-control", role: "button", data: { slide:"prev" } do
           %span.glyphicon.glyphicon-chevron-left
@@ -56,9 +45,9 @@
       = link_to "Hands on History", hands_on_history_path, class: "underline-link"
     .col-1-3.middle-col
       = image_tag "school_dig.jpg", class: "img-border"
-      %h3 School Dig
+      %h3 Education
       %p Our educational programme guides, motivates and encourage children to draw together diverse threads of evidence in order to give relevance to everyday objects, places and landscapes.
-      = link_to "School Dig", school_dig_path, class: "underline-link"
+      = link_to "School Dig", education_path, class: "underline-link"
 
     .col-1-3.right-col
       = image_tag "bell.jpg", class: "img-border"

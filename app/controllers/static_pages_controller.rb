@@ -5,7 +5,7 @@ class StaticPagesController < ApplicationController
   def handsonhistory
   end
 
-  def schooldig
+  def education
   end
 
   def projects

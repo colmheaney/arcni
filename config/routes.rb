@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root 'static_pages#home'
 
-  get 'school-dig' => 'static_pages#schooldig'
+  get 'education' => 'static_pages#education'
 
   get 'hands-on-history' => 'static_pages#handsonhistory'
 
